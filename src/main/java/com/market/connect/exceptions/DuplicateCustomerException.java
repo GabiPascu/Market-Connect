@@ -1,4 +1,4 @@
-package com.market.connect.esxceptions;
+package com.market.connect.exceptions;
 
 public class DuplicateCustomerException extends RuntimeException {
     public DuplicateCustomerException(String message) {

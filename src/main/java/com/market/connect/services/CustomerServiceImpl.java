@@ -24,9 +24,9 @@ public class CustomerServiceImpl implements CustomerService {
     }
 
     @Override
-    public CustomerDto createCustomer(CustomerDto customerDTO) {
-        customerValidationService.validateUniqueCustomer(customerDTO);
-        Customer savedCustomer = customerRepository.save(modelMapper.map(customerDTO, Customer.class));
+    public CustomerDto createCustomer(CustomerDto customerDto) {
+        customerValidationService.validateUniqueCustomer(customerDto);
+        Customer savedCustomer = customerRepository.save(modelMapper.map(customerDto, Customer.class));
         log.info("Customer with id {}, saved in database.", savedCustomer.getId());
 
         return modelMapper.map(savedCustomer, CustomerDto.class);
