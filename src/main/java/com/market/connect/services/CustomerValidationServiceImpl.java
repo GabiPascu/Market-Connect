@@ -1,6 +1,6 @@
 package com.market.connect.services;
 
-import com.market.connect.esxceptions.DuplicateCustomerException;
+import com.market.connect.exceptions.DuplicateCustomerException;
 import com.market.connect.models.dtos.CustomerDto;
 import com.market.connect.models.entities.Customer;
 import com.market.connect.repositories.CustomerRepository;
